@@ -100,7 +100,7 @@ import {
                 <Menu.Item
                     name='Home Page'
                     onClick={() => {
-                        this.props.history.push('/homepage');
+                        this.props.history.push('/');
                     }}
                     >
             Home
@@ -177,6 +177,16 @@ import {
               <Menu.Item as='a'>Careers</Menu.Item>
               <Menu.Item as='a'>Log in</Menu.Item>
               <Menu.Item as='a'>Sign Up</Menu.Item>
+              
+              <Menu.Item
+                    name='Random Images'
+                    onClick={() => {
+                        this.props.history.push('/images');
+                    }}
+                    >
+            Random Images
+               </Menu.Item>
+
               <Menu.Item
                     name='geoQuiz'
                     onClick={() => {
@@ -184,7 +194,7 @@ import {
                     }}
                     >
             Geography Quiz
-                </Menu.Item>
+              </Menu.Item>
             </Sidebar>
   
             <Sidebar.Pusher dimmed={sidebarOpened}>
