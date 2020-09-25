@@ -97,12 +97,24 @@ import {
                 size='large'
               >
                 <Container>
-                  <Menu.Item as='a' active>
-                    Home
-                  </Menu.Item>
+                <Menu.Item
+                    name='Home Page'
+                    onClick={() => {
+                        this.props.history.push('/homepage');
+                    }}
+                    >
+            Home
+                </Menu.Item>
                   <Menu.Item as='a'>Work</Menu.Item>
                   <Menu.Item as='a'>Company</Menu.Item>
-                  <Menu.Item as='a'>Careers</Menu.Item>
+                  <Menu.Item
+                    name='Random Images'
+                    onClick={() => {
+                        this.props.history.push('/imgpage');
+                    }}
+                    >
+            Random Images
+                </Menu.Item>
                   <Menu.Item
                     name='geoQuiz'
                     onClick={() => {
