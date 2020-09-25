@@ -110,7 +110,7 @@ import {
                   <Menu.Item
                     name='Random Images'
                     onClick={() => {
-                        this.props.history.push('/imgpage');
+                        this.props.history.push('/images');
                     }}
                     >
             Random Images
