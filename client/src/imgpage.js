@@ -22,7 +22,7 @@ const FixedMenuLayout = (props) => (
         <Menu.Item
                     name='Home Page'
                     onClick={() => {
-                        props.history.push('/homepage');
+                        props.history.push('/');
                     }}
                     >
             Home
