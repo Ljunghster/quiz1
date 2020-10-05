@@ -11,7 +11,7 @@ import {
   Segment,
 } from 'semantic-ui-react'
 
-const FixedMenuLayout = () => (
+const FixedMenuLayout = (props) => (
   <div>
     <Menu fixed='top' inverted>
       <Container>
@@ -22,7 +22,7 @@ const FixedMenuLayout = () => (
         <Menu.Item
                     name='Home Page'
                     onClick={() => {
-                        this.props.history.push('/homepage');
+                        props.history.push('/homepage');
                     }}
                     >
             Home
@@ -34,7 +34,7 @@ const FixedMenuLayout = () => (
             <Menu.Item
                     name='geoQuiz'
                     onClick={() => {
-                        this.props.history.push('/quiz');
+                        props.history.push('/quiz');
                     }}
                     >
             Geography Quiz
